@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jill Lin Data Portfolio - House Price Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jill Lin</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>New Taipei City House Price Analysis Using Python</h1>
+							<span class="image main"><img src="images/linkuo/newtaipei.jpeg" alt="" /></span>
+							<h2>Tech Used:</h2>
+									
+							<div class="col-6 col-12-medium">
+								<ul>
+									<li>Python</li>
+									<li>seaborn</li>
+							
+								</ul>
+							</div>
+							<h2>Dataset Source:</h2>
+									
+							<div class="col-6 col-12-medium">
+								
+								<ul>
+									<a href="https://plvr.land.moi.gov.tw/DownloadOpenData">內政部不動產成交案件實際資訊資料供應系統</a>
+							
+								</ul>
+							</div>
+							<h2>Github project Link:</h2>
+									
+							<div class="col-6 col-12-medium">
+									
+								<ul>
+									<a href="https://github.com/chinchi777/New_Taipei_City_House_Price_Analysis_Using_Python">詳細資料清理及資料EDA過程請見Github連結</a>
+								
+								</ul>
+							</div>
+							<h2>新北市林口區房價分析-專案發想</h2>
+							<img src="images/linkuo/newtaipei population 400.png" width="700" />
+							<img src="images/linkuo/newtaipei population linkuo.png" width="700" />
+							<p>新北市人口在2023年重返400萬大關，其中從2018~2022人口增長最多的行政區為林口區，身為從小在林口區域長大的在地人有感夜晚的點燈率高，空屋率似乎降低了
+								林口區是否真的成為新聞標題中的高CP宜居城市，我想利用2017~2022年度林口區相對新北市的房價來比較，大家移居林口的主因是否真的是房價引力。
+							</p>
+							<p>以下將會利用資料視覺化方式回答以下幾點</p>
+							<ol>
+								<li>哪一個行政區的交易件數最多? 林口在交易數排名位居第幾？</li>
+								<li>房價排名哪一區最高？林口在房價排名位居第幾？</li>
+								<li>利用單價相近與交易件數相近行政區與林口做逐年比較</li>
+								<li>比較相近的行政區交易坪數比較</li>
+								<li>結論</li>
+						
+							</ol>
+							<h2>Q1. 哪一個行政區的交易件數最多? 林口在交易數排名位居第幾？</h2>
+							<p>板橋區交易件數最多6年內有20033件，淡水則有將近20000件，林口區交易數為新北市排第五，與汐止區、新店區、三重區相近交易數約在10000筆。</p>
+							<span class="image main"><img src="images/linkuo/bar_case.png" alt="" /></span>
+							<h2>Q2. 房價排名哪一區最高？林口在房價排名位居第幾？</h2>
+							<p>永和區房價最高約為一坪44.4萬，林口則排名居中為第14名房價約為一坪29.3萬。</p>
+							<p>由此可看出林口的房價真的是有吸引力的，另外淡水的低房價也顯示了買氣。</p>
+							<span class="image main"><img src="images/linkuo/bar_unit price.png" alt="" /></span>
+							
+							<h2>Q3.  利用單價相近與交易件數相近行政區與林口做逐年比較</h2>
+							<ul>
+								<li>在件數相近的行政區中比較單價，林口相較於其他行政區是最有房價優勢。</li>
+								<p></p>
+								<span class="image main"><img src="images/linkuo/plot_simi_case_year.png" alt="" /></span>
+							    <li>在單價相近的行政區比較件數，林口區的交易件數則遠超過其他區域。</li>
+								<span class="image main"><img src="images/linkuo/plot_simi_price_year.png" alt="" /></span>
+							</ul>
+							<h2>Q4. 比較相近的行政區交易坪數比較</h2>
+							<ul>
+								<li>林口區相較其他行政區交易坪數為最高，消費者願意在林口購買較大坪數的物件。</li>
+							</ul>
+							<span class="image main"><img src="images/linkuo/plot_area.png" alt="" /></span>
+							<h2>結論</h2>
+							<ul>
+								<li>2018年林口區出現一波購屋的高潮，由於相較於其他新北市熱區林口房價較低，在相近房價的區域則擁有較好的生活機能而出線。</li>
+							    <li>另外消費者也傾向在林口購買較高坪數的物件，由此點可推估購買林口的消費者大多數是自住需求，對於生活空間有較高的要求。</li>
+								<li>以房價、交易件數及交易坪數來推估，林口區在新北市區域中除了具有房價優勢以外也具有吸引自住家庭型的消費者特點，宜居城市的稱號應該不只是新聞標題，以2022交易件數上升的走勢未來林口移入人數還有可能繼續增長。</li>
+							</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+							
+								<ul class="icons">
+									
+									<li><a href="https://github.com/chinchi777" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									
+									<li><a href="pinklcc@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
